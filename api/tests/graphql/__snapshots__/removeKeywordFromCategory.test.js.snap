@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`removeKeywordFromCategory on success it should match the snapshot 1`] = `
+Object {
+  "data": Object {
+    "removeKeywordFromCategory": Object {
+      "keywords": Array [
+        "audi",
+        "tires",
+      ],
+      "name": "cars",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

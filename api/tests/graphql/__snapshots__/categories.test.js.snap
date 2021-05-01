@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`categories The categories query should match the snapshot 1`] = `
+Object {
+  "data": Object {
+    "categories": Array [
+      Object {
+        "keywords": Array [
+          "audi",
+          "bmw",
+          "tires",
+        ],
+        "name": "cars",
+      },
+      Object {
+        "keywords": Array [
+          "bianchi",
+        ],
+        "name": "bikes",
+      },
+      Object {
+        "keywords": Array [
+          "banana",
+          "avocado",
+        ],
+        "name": "fruit",
+      },
+      Object {
+        "keywords": Array [
+          "cat",
+          "dog",
+          "otter",
+        ],
+        "name": "animals",
+      },
+      Object {
+        "keywords": Array [
+          "tea",
+          "water",
+        ],
+        "name": "drinks",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
