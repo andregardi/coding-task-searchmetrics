@@ -1,29 +1,49 @@
-# Template: Simple GraphQL Server
+# Searchmetrics Coding Task – Keyword Manager 
 
-This template contains a folder with a very basic implementation of a GraphQL server (with Apollo).
+## Overview
+The goal of this task is to create a React application to manage and categorize search keywords. 
 
-## Adding a frontend
+## Tech Stask
+Fullstack code challenge using:
+### Back-end
+- Node.js
+- GraphQL with Apollo Server
+- Jest for testing
+### Front-end
+- React
+- Hooks
+- Apollo Client
 
-One very easy way to add a React JS frontend application is to use create-react-app:
-```
-npx create-react-app frontend
-```
+## Running locally
+### Back-end
+- Open the `./api` folder on terminal.
+- Run `npm install`
+- Run `npm start`
+This will start the server on  http://localhost:4000
+### Front-end
+The back-end server is required to use the webclient.
+- Open the `./frontend` folder on terminal.
+- Run `npm install`
+- Run `npm start`
+This will start the webclient on  http://localhost:3000
 
-The resulting structure will then look something like this:
-```
-|
-|- api
-|- frontend
-|- README.md
-```
+## Deploying on production
+This application is not prodution ready!
+It could be fixed in a few steps:
+### Back-end
+- Add a script to start the server without nodemon.
+### Front-end
+- Refactor the, `REACT_APP_GRAPHQL_SERVER_URL` used by the appollo client to load the server url from a env variable.
+- Setup [cross-env](https://www.npmjs.com/package/cross-env) or [dotenv](https://www.npmjs.com/package/dotenv) to manage `GRAPHQL_SERVER_URL` locally.
+- Run `npm build`. `REACT_APP_GRAPHQL_SERVER_URL` is transpiled during the build time. Changing the server URL requires a new buils.
+- Copy the content of `./build` folder and serve it as a static artefact on your CI.
 
-### Run it
+See the section about [React Deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To run the application locally, you have to start both server and frontend application:
-1. Navigate to the `api` folder in the terminal and start the server: `npm run start`
-2. (Open `localhost:4000` in the browser to test the GraphQL API)
-2. In a different terminal navigate to the `frontend` folder (or however you called it) and run it as well.
-3. Open `localhost:3000 in a browser to see the frontend application.
-
-
-
+## To do
+What could have been done better, given more time:
+- Use some database to persist the categories and keyword when shuting down the backend server.
+- Add unit tests on the front-end with `jest` and integration tests with `@testing-library/react`, already set up on `create-react-app`.
+- Use styled-components lib on the front-end.
+- Improve the UX with loading animations when creating categories and keywords.
+- Improve the UX when getting an error from the API.
