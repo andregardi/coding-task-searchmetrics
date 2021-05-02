@@ -1,0 +1,17 @@
+.keywordBadge {
+  margin: 0.5em;
+  background-color: #f5f5f5;
+  padding: 0.5em;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 1px 1px 5px #a9a9a9;
+  box-shadow: 1px 1px 5px #a9a9a9;
+  display: inline-flex;
+  align-items: center;
+}
+
+.removeIcon {
+  margin-left: 1em;
+  vertical-align: middle;
+  height: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.category {
+  width: calc((100% / 3));
+  box-sizing: border-box;
+  margin-bottom: 3em;
+}
+
+.category h2 {
+  margin: 0;
+  overflow: hidden;
+  max-width: calc(100% - 1.5em);
+}
+
+.categoryBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0em 1em 0 0;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 1px 5px #c9c9c9;
+  box-shadow: 1px 1px 5px #c9c9c9;
+  height: 100%;
+}
+
+.categoryTitle {
+  padding: 1.5em;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.removeIcon {
+  position: absolute;
+  height: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5em;
+  cursor: pointer;
+}

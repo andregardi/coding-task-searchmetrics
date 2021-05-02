@@ -1,0 +1,7 @@
+.categories {
+  margin-top: 3em;
+  margin: 3em -1em;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}

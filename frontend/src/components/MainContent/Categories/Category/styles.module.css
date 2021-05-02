@@ -1,0 +1,15 @@
+.removeIcon {
+  position: absolute;
+  height: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5em;
+  cursor: pointer;
+}
+
+.keywords {
+  flex: 1;
+  min-height: 3em;
+  overflow: auto;
+  padding: 0.5em;
+}

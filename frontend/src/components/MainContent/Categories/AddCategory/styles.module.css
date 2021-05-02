@@ -1,0 +1,33 @@
+.categoryForm {
+  margin: 0;
+}
+
+.categoryForm input {
+  border: none;
+  font-size: 1.5em;
+  background-color: #f5f5f5;
+  width: calc(100% - 2em);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.categoryForm input:focus {
+  outline: none;
+}
+
+.newCategory {
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  width: calc((100% / 3) - 1em);
+  height: 2em;
+  line-height: 2em;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px black dashed;
+}
+
+.hint{
+  color: #999;
+  padding: 1em;
+}
